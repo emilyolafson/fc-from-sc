@@ -5,10 +5,13 @@
 studydir = pwd;
 
 % Load average healthy connectome & individual healthy connectomes.
-allref=load(strcat(pwd,'/subject_data/denom_allref_mat.mat'))
+allref=load(strcat(pwd,'/subject_data/fs86_avg/allref_denom.mat'))
 allref=allref.allref_denom;
+for i=1:420
+    neg_idx{i}=find(allref{i}<0);
+end
 
-allref=full(allref)
+
 full3d=[];
 for i=1:420
     full3d=cat(3, full3d, full(allref{i}));
