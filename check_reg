@@ -1,0 +1,5 @@
+freeview -v mri/orig.mgz:visible=0 \
+    denoise_swaufunc1.nii:reg=register.lta -f \
+    surf/lh.white \
+    surf/rh.white \
+    -viewport cor -transform-volume

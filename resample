@@ -1,0 +1,4 @@
+mri_vol2surf --mov denoise_swaufunc1.nii \
+    --reg register.lta \
+    --projfrac 0.5 --interp nearest \
+    --hemi lh --o lh.sig.mgh

@@ -1,0 +1,7 @@
+freeview -f  surf/lh.pial:annot=aparc.annot:name=pial_aparc:visible=0 \
+surf/lh.pial:annot=aparc.a2009s.annot:name=pial_aparc_des:visible=0 \
+surf/lh.inflated:overlay=lh.thickness:overlay_threshold=0.1,3::name=inflated_thickness:visible=0 \
+surf/lh.inflated:visible=0 \
+surf/lh.white:visible=0 \
+surf/lh.pial \
+--viewport 3d
